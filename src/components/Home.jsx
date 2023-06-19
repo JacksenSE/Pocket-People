@@ -1,9 +1,31 @@
-import React from 'react'
-import Nav from './Nav'
-export default function Home() {
+import React, { useState, useEffect } from 'react';
+import Nav from './Nav';
+import NewsletterPopup from './NewsLetter';
+
+
+function Home() {
+  const [isNewsletterOpen, setNewsletterOpen] = useState(false);
+
+  useEffect(() => {
+    const isNewsletterShown = localStorage.getItem('newsletterShown');
+    if (!isNewsletterShown) {
+      setNewsletterOpen(true);
+      localStorage.setItem('newsletterShown', 'true');
+    }
+  }, []);
+
+  const closeNewsletter = () => {
+    setNewsletterOpen(false);
+  };
+
   return (
     <>
-    <Nav/>
+      <Nav />
+      <div>
+        <NewsletterPopup open={isNewsletterOpen} onClose={closeNewsletter} />
+      </div>
     </>
-  )
+  );
 }
+
+export default Home;

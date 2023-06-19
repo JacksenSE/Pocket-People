@@ -9,7 +9,7 @@ function Nav() {
           <Link to="/" className="Home">Home</Link>
         </li>
         <li>
-          <Link to="/About" className="About">About Us</Link>
+          <Link to="/About" className="About">About</Link>
         </li>
         <li>
           <Link to="/Books" className="Books">Books</Link>
@@ -18,7 +18,7 @@ function Nav() {
           <Link to="/Products" className="Products">Products</Link>
         </li>
         <li>
-          <Link to="/Contact" className="Contact">Contact us</Link>
+          <Link to="/Contact" className="Contact">Contact</Link>
         </li>
        
       </ul>

@@ -1,4 +1,9 @@
 
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 .Nav ul{
   background-color: rgb(190, 153, 153);
   list-style-type: none;
@@ -7,6 +12,7 @@
 }
 
 .Nav li a {
+  position: sticky;
   position: relative;
   display: block;
   color: #000000;
@@ -14,6 +20,73 @@
   padding: 1.5em 3em;
   text-decoration: none;
   float: left;
-  left: 20em;
+  left: 15em;
  font-size: 1.5em;
+ 
 }
+
+.about-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ right: 35em;
+ top: 10em;
+ 
+}
+
+.author-image {
+  width: 300px; 
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.contact-container h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.contact-container form {
+  display: grid;
+  gap: 1em;
+}
+
+.contact-container label {
+  font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.contact-container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background-color: #0056b3;
+}
+.book img{
+  position: relative;
+  right: 25em;
+  top: 10em;
+  width: 30em;
+  
+}
+
