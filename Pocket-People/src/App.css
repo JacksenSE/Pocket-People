@@ -1,0 +1,19 @@
+
+.Nav ul{
+  background-color: rgb(190, 153, 153);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav li a {
+  position: relative;
+  display: block;
+  color: #000000;
+  font-weight:bold;
+  padding: 1.5em 3em;
+  text-decoration: none;
+  float: left;
+  left: 20em;
+ font-size: 1.5em;
+}
